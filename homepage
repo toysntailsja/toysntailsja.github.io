@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        #titlephoto {
+            padding-top: 15px;
+            width: 102%;
+            height: 650px;
+            background-image: url(https://thumbs.dreamstime.com/z/border-collie-puppy-playing-spring-summer-grass-meadow-playing-focusing-instructor-border-collies-black-puppy-blurred-136911475.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-top: -8px;
+            margin-left: -8px;
+
+        }
+
+        #title {
+            text-align: center;
+            color: white;
+            font-family: "Montserrat", sans-serif;
+            font-size: 5rem;
+            padding-top: 17%;
+            font-weight: 600;
+
+        }
+
+        .subtitle {
+            width: 100%;
+            text-align: center;
+            margin-left: -8px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 1.5rem;
+
+        }
+
+        #goal {
+            margin-top: 40px;
+            color: rgb(97, 227, 91);
+        }
+
+        .text {
+            font-family: 'Quicksand', sans-serif;
+            text-align: center;
+            width: 75%;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        #charity {
+            width: 102%;
+            height: 170px;
+            background-color: rgb(97, 227, 91);
+            margin-left: -8px;
+            margin-top: 40px;
+            text-align: center;
+
+        }
+
+        #ourcharitee {
+            color: white;
+            padding-top: 20px;
+        }
+
+        #ourcharity {
+            color: white;
+        }
+
+        body {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.74);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        #line {
+            width: 102%;
+            background-color: rgb(225, 159, 109);
+            height: 5px;
+            margin-left: -8px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="home%20new%20trial.html">Home</a>
+        <a href="about%20new%20trial.html">About</a>
+        <a href="product%20new%20trial.html">Product</a>
+        <a href="contact%20new%20trial.html">Contact</a>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer;color:white;position:absolute;z-index:1;" onclick="openNav()">&#9776;</span>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <div id="titlephoto">
+        <div id="title">Toys 'n' Tails</div>
+    </div>
+    <div id="goal" class="subtitle">OUR GOAL</div>
+    <div class="text">Our goal is to bring joy to pets and owners alike. We strive to support the local animal community, with donations and volunteer hours.</div>
+    <div id="charity">
+        <div id='ourcharitee' class="subtitle">OUR SPONSOR</div>
+        <div id="ourcharity" class='text'>Toys 'n' Tails, a JA company, is sponsored by Arcane. <br> Arcane is a modern marketing company that helps their clients navigate digital and technocal landscapes. Their goal is to ensure income from marketing, rather than having it be an expense.</div>
+    </div>
+    <div class="subtitle" id="goal">UPCOMING EVENTS</div>
+    <div class="text" style="padding-bottom: 40px;">There are currently no upcoming events, stay tuned for updates!</div>
+    <div id="dates"></div>
+    <div id="events"></div>
+
+    <div id="line"></div>
+
+</body></html>
